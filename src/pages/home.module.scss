@@ -1,1 +1,47 @@
-// TODO
+.homeContainer {
+  max-width: 1120px;
+  height: calc(100vh - 12.44rem);
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.homeContent {
+  margin: 0 auto;
+
+  a {
+    display: block;
+
+    & + a {
+      margin-top: 2.667rem;
+      border-top: 1px solid var(--gray-700);
+    }
+
+    header {
+      font-weight: 700;
+      font-size: 1.5rem;
+      line-height: 1.882rem;
+
+      color: var(--gray-heading);
+    }
+
+    section {
+      font-size: 1rem;
+      line-height: 1.21rem;
+    }
+
+    footer {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      font-size: 0.778rem;
+      line-height: 0.941rem;
+      color: var(--gray-info);
+
+      time { 
+        margin-right: 1.33rem;
+      }
+    }
+  }
+
+}
